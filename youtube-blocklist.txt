@@ -1,77 +1,22 @@
 # ============================================================
-# 🎯 Seb Edition - Google Global Ads & Tracking Blocklist v1
-# Compatible : AdGuard Home / Pi-hole
-# But : Bloquer la pub et le tracking Google universellement
+# 🎬 Seb Edition - YouTube & Google Ads Blocklist v2
 # ============================================================
 
-# 🧱 Réseaux publicitaires principaux
-||adservice.google.com^$dnsrewrite=0.0.0.0
-||adservice.google.fr^$dnsrewrite=0.0.0.0
-||adservice.google.co.uk^$dnsrewrite=0.0.0.0
-||adservice.googleadservices.com^$dnsrewrite=0.0.0.0
+# YouTube ads principaux
+||googlevideo.com^$dnsrewrite=0.0.0.0
+||youtubei.googleapis.com^$dnsrewrite=0.0.0.0
+||youtubeads.googleapis.com^$dnsrewrite=0.0.0.0
+||s.youtube.com^$dnsrewrite=0.0.0.0
+||r*.sn-*.googlevideo.com^$dnsrewrite=0.0.0.0
 ||pagead2.googlesyndication.com^$dnsrewrite=0.0.0.0
-||pagead.l.doubleclick.net^$dnsrewrite=0.0.0.0
-||partnerad.l.google.com^$dnsrewrite=0.0.0.0
-||ad.doubleclick.net^$dnsrewrite=0.0.0.0
-||securepubads.g.doubleclick.net^$dnsrewrite=0.0.0.0
-||tpc.googlesyndication.com^$dnsrewrite=0.0.0.0
-||googlesyndication.com^$dnsrewrite=0.0.0.0
-||g.doubleclick.net^$dnsrewrite=0.0.0.0
-
-# 📊 Tracking et analytics Google
-||google-analytics.com^$dnsrewrite=0.0.0.0
-||ssl.google-analytics.com^$dnsrewrite=0.0.0.0
-||analytics.google.com^$dnsrewrite=0.0.0.0
-||tagmanager.google.com^$dnsrewrite=0.0.0.0
-||marketingplatform.google.com^$dnsrewrite=0.0.0.0
-||measurement.google.com^$dnsrewrite=0.0.0.0
-
-# 📱 Réseau mobile / In-app ads (Android, iOS)
-||admob.com^$dnsrewrite=0.0.0.0
-||adsense.google.com^$dnsrewrite=0.0.0.0
-||adwords.google.com^$dnsrewrite=0.0.0.0
-||ads-api.google.com^$dnsrewrite=0.0.0.0
-||mobileads.google.com^$dnsrewrite=0.0.0.0
-||pagead-tpc.l.google.com^$dnsrewrite=0.0.0.0
-||adclick.g.doubleclick.net^$dnsrewrite=0.0.0.0
-||admob.googleapis.com^$dnsrewrite=0.0.0.0
-
-# 🧠 Tracking comportemental & conversion
-||conversiontracking.googleadservices.com^$dnsrewrite=0.0.0.0
-||doubleclick.net^$dnsrewrite=0.0.0.0
-||stats.g.doubleclick.net^$dnsrewrite=0.0.0.0
-||clickserve.dartsearch.net^$dnsrewrite=0.0.0.0
-||googleads.g.doubleclick.net^$dnsrewrite=0.0.0.0
-||adsmeasurement.google.com^$dnsrewrite=0.0.0.0
-||optimize.google.com^$dnsrewrite=0.0.0.0
-
-# 🧩 Pub dans les flux, apps et widgets Android
-||firebase-settings.crashlytics.com^$dnsrewrite=0.0.0.0
-||firebaseinstallations.googleapis.com^$dnsrewrite=0.0.0.0
-||firebaseinappmessaging.googleapis.com^$dnsrewrite=0.0.0.0
-||crashlyticsreports-pa.googleapis.com^$dnsrewrite=0.0.0.0
-||app-measurement.com^$dnsrewrite=0.0.0.0
-||play.googleapis.com/ads^$dnsrewrite=0.0.0.0
-
-# 🧹 Anti-contournement dynamique
 ||pubads.g.doubleclick.net^$dnsrewrite=0.0.0.0
-||static.doubleclick.net^$dnsrewrite=0.0.0.0
-||pagead-googlehosted.l.google.com^$dnsrewrite=0.0.0.0
-||adstats.google.com^$dnsrewrite=0.0.0.0
-||googleads4.g.doubleclick.net^$dnsrewrite=0.0.0.0
+||youtube.googleapis.com/gen_204^$dnsrewrite=0.0.0.0
+||youtube.googleapis.com/api/stats^$dnsrewrite=0.0.0.0
+||youtube.googleapis.com/api/stats/ads^$dnsrewrite=0.0.0.0
+||yt3.ggpht.com^$dnsrewrite=0.0.0.0
 
-# ✅ Exceptions nécessaires (Gmail, Maps, Drive, etc.)
-@@||google.com^$important
-@@||gstatic.com^$important
+# Exceptions nécessaires
+@@||youtube.com^$important
+@@||ytimg.com^$important
 @@||googleusercontent.com^$important
-@@||googleapis.com^$important
-@@||maps.googleapis.com^$important
-@@||drive.google.com^$important
-@@||accounts.google.com^$important
-@@||clients4.google.com^$important
-
-# ============================================================
-# 🧠 Note :
-# Bloque environ 95 % des publicités Google, mobiles et web,
-# sans gêner Gmail, Maps, Android ou Home Assistant Cloud.
-# ============================================================
+@@||gstatic.com^$important
