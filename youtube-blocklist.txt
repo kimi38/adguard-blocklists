@@ -1,10 +1,55 @@
-# Blocage YouTube et Google Ads - Seb Edition
+# ============================================================
+# 🎯 Seb Edition - YouTube & Google Ads Blocklist v2 (Optimisée)
+# Compatible : AdGuard Home / Pi-hole
+# Objectif : Bloquer efficacement les publicités YouTube/Google
+# ============================================================
+
+# 🧱 YouTube Ads principaux
 ||googlevideo.com^$dnsrewrite=0.0.0.0
 ||youtubei.googleapis.com^$dnsrewrite=0.0.0.0
 ||youtubeads.googleapis.com^$dnsrewrite=0.0.0.0
 ||s.youtube.com^$dnsrewrite=0.0.0.0
 ||r*.sn-*.googlevideo.com^$dnsrewrite=0.0.0.0
 ||pagead2.googlesyndication.com^$dnsrewrite=0.0.0.0
+||pagead.l.doubleclick.net^$dnsrewrite=0.0.0.0
 ||pubads.g.doubleclick.net^$dnsrewrite=0.0.0.0
 ||yt3.ggpht.com^$dnsrewrite=0.0.0.0
 ||youtube.googleapis.com/gen_204^$dnsrewrite=0.0.0.0
+||youtube.googleapis.com/api/stats^$dnsrewrite=0.0.0.0
+||youtube.googleapis.com/api/stats/ads^$dnsrewrite=0.0.0.0
+
+# 🎧 YouTube Music
+||music.youtube.com^$dnsrewrite=0.0.0.0
+||ytmusic.googleapis.com^$dnsrewrite=0.0.0.0
+||ytmusicadexchange.com^$dnsrewrite=0.0.0.0
+
+# 📺 YouTube TV / Smart TV
+||youtube.samsungcloudsolution.com^$dnsrewrite=0.0.0.0
+||youtubei.samsungtv.net^$dnsrewrite=0.0.0.0
+||youtubei.clients6.google.com^$dnsrewrite=0.0.0.0
+
+# 📈 Tracking et télémétrie YouTube/Google
+||youtubeanalytics.googleapis.com^$dnsrewrite=0.0.0.0
+||metrics.youtube.com^$dnsrewrite=0.0.0.0
+||googleads.g.doubleclick.net^$dnsrewrite=0.0.0.0
+||tpc.googlesyndication.com^$dnsrewrite=0.0.0.0
+||partnerad.l.google.com^$dnsrewrite=0.0.0.0
+||ad.doubleclick.net^$dnsrewrite=0.0.0.0
+||adservice.google.com^$dnsrewrite=0.0.0.0
+||adservice.google.fr^$dnsrewrite=0.0.0.0
+
+# 🧹 Annonces et tracking généraux Google
+||g.doubleclick.net^$dnsrewrite=0.0.0.0
+||pagead-googlehosted.l.google.com^$dnsrewrite=0.0.0.0
+||static.doubleclick.net^$dnsrewrite=0.0.0.0
+||securepubads.g.doubleclick.net^$dnsrewrite=0.0.0.0
+||adstats.google.com^$dnsrewrite=0.0.0.0
+||ads.youtube.com^$dnsrewrite=0.0.0.0
+
+# 🧩 Anti-contournement (flux vidéos intégrés)
+||ytstatic.l.google.com^$dnsrewrite=0.0.0.0
+||redirector.googlevideo.com^$dnsrewrite=0.0.0.0
+||rr*.sn-*.googlevideo.com^$dnsrewrite=0.0.0.0
+
+# ✅ Exceptions (évite blocage miniature/vidéo)
+@@||youtube
