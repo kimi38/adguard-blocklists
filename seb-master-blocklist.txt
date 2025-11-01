@@ -1,0 +1,32 @@
+# ============================================================
+# 🧱 Seb Master Blocklist - Edition 2025
+# Auteur : Seb x ChatGPT
+# ============================================================
+
+# 🔁 Inclusion automatique des sous-listes
+! https://raw.githubusercontent.com/<TON_PSEUDO>/adguard-blocklists/main/youtube-blocklist.txt
+! https://raw.githubusercontent.com/<TON_PSEUDO>/adguard-blocklists/main/google-global-ads-blocklist.txt
+
+# 🔥 Réseaux sociaux / Tracking général
+||connect.facebook.net^$dnsrewrite=0.0.0.0
+||ads.facebook.com^$dnsrewrite=0.0.0.0
+||ads.instagram.com^$dnsrewrite=0.0.0.0
+||log.byteoversea.com^$dnsrewrite=0.0.0.0
+||ads.tiktok.com^$dnsrewrite=0.0.0.0
+||analytics.tiktok.com^$dnsrewrite=0.0.0.0
+||ads.snapchat.com^$dnsrewrite=0.0.0.0
+||ads.pinterest.com^$dnsrewrite=0.0.0.0
+||ads.linkedin.com^$dnsrewrite=0.0.0.0
+||criteo.com^$dnsrewrite=0.0.0.0
+||taboola.com^$dnsrewrite=0.0.0.0
+||outbrain.com^$dnsrewrite=0.0.0.0
+||quantserve.com^$dnsrewrite=0.0.0.0
+||doubleverify.com^$dnsrewrite=0.0.0.0
+
+# ✅ Exceptions pour compatibilité
+@@||google.com^$important
+@@||youtube.com^$important
+@@||instagram.com^$important
+@@||amazon.com^$important
+@@||gstatic.com^$important
+@@||ytimg.com^$important
