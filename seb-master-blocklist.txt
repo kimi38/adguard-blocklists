@@ -1,32 +1,50 @@
 # ============================================================
-# 🧱 Seb Master Blocklist - Edition 2025
-# Auteur : Seb x ChatGPT
+# 🎯 Seb Master Blocklist - Edition 2025
+# Bloque YouTube, Google, Facebook, TikTok, Amazon, etc.
+# Compatible AdGuard Home
 # ============================================================
 
-# 🔁 Inclusion automatique des sous-listes
-! https://raw.githubusercontent.com/<TON_PSEUDO>/adguard-blocklists/main/youtube-blocklist.txt
-! https://raw.githubusercontent.com/<TON_PSEUDO>/adguard-blocklists/main/google-global-ads-blocklist.txt
+# YouTube & Google Video Ads
+||googlevideo.com^$dnsrewrite=0.0.0.0
+||youtubei.googleapis.com^$dnsrewrite=0.0.0.0
+||youtubeads.googleapis.com^$dnsrewrite=0.0.0.0
+||s.youtube.com^$dnsrewrite=0.0.0.0
+||pagead2.googlesyndication.com^$dnsrewrite=0.0.0.0
+||pubads.g.doubleclick.net^$dnsrewrite=0.0.0.0
 
-# 🔥 Réseaux sociaux / Tracking général
+# Google Ads & Tracking
+||adservice.google.com^$dnsrewrite=0.0.0.0
+||adservice.google.fr^$dnsrewrite=0.0.0.0
+||google-analytics.com^$dnsrewrite=0.0.0.0
+||tagmanager.google.com^$dnsrewrite=0.0.0.0
+||marketingplatform.google.com^$dnsrewrite=0.0.0.0
+||doubleclick.net^$dnsrewrite=0.0.0.0
+
+# Facebook / Instagram
 ||connect.facebook.net^$dnsrewrite=0.0.0.0
 ||ads.facebook.com^$dnsrewrite=0.0.0.0
 ||ads.instagram.com^$dnsrewrite=0.0.0.0
-||log.byteoversea.com^$dnsrewrite=0.0.0.0
+
+# TikTok
 ||ads.tiktok.com^$dnsrewrite=0.0.0.0
 ||analytics.tiktok.com^$dnsrewrite=0.0.0.0
-||ads.snapchat.com^$dnsrewrite=0.0.0.0
-||ads.pinterest.com^$dnsrewrite=0.0.0.0
-||ads.linkedin.com^$dnsrewrite=0.0.0.0
-||criteo.com^$dnsrewrite=0.0.0.0
+
+# Amazon
+||ads.amazon.com^$dnsrewrite=0.0.0.0
+||advertising.amazon.com^$dnsrewrite=0.0.0.0
+||aax-eu.amazon-adsystem.com^$dnsrewrite=0.0.0.0
+
+# Tracking général
 ||taboola.com^$dnsrewrite=0.0.0.0
 ||outbrain.com^$dnsrewrite=0.0.0.0
+||criteo.com^$dnsrewrite=0.0.0.0
 ||quantserve.com^$dnsrewrite=0.0.0.0
-||doubleverify.com^$dnsrewrite=0.0.0.0
 
-# ✅ Exceptions pour compatibilité
+# Exceptions utiles
 @@||google.com^$important
 @@||youtube.com^$important
-@@||instagram.com^$important
-@@||amazon.com^$important
 @@||gstatic.com^$important
 @@||ytimg.com^$important
+@@||drive.google.com^$important
+@@||accounts.google.com^$important
+@@||maps.googleapis.com^$important
