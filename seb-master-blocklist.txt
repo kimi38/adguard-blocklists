@@ -4,14 +4,6 @@
 # Compatible AdGuard Home
 # ============================================================
 
-# YouTube & Google Video Ads
-||googlevideo.com^$dnsrewrite=0.0.0.0
-||youtubei.googleapis.com^$dnsrewrite=0.0.0.0
-||youtubeads.googleapis.com^$dnsrewrite=0.0.0.0
-||s.youtube.com^$dnsrewrite=0.0.0.0
-||pagead2.googlesyndication.com^$dnsrewrite=0.0.0.0
-||pubads.g.doubleclick.net^$dnsrewrite=0.0.0.0
-
 # Google Ads & Tracking
 ||adservice.google.com^$dnsrewrite=0.0.0.0
 ||adservice.google.fr^$dnsrewrite=0.0.0.0
